@@ -1,0 +1,10 @@
+.card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: box-shadow .2s, transform .2s; }
+.card:hover { box-shadow: 0 10px 28px rgba(74,27,18,.1); transform: translateY(-2px); }
+.card__media { position: relative; display: block; aspect-ratio: 4 / 3; background: var(--sand); overflow: hidden; }
+.card__media svg, .card__media img { width: 100%; height: 100%; object-fit: cover; }
+.chip-badge { position: absolute; top: 10px; left: 10px; background: #fff; color: var(--ink); font-size: 10.5px; font-weight: 600; padding: 3px 9px; border-radius: 99px; box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+.card__body { padding: 16px; display: flex; flex-direction: column; flex: 1; }
+.card__body h3 { font-size: 17px; font-weight: 700; letter-spacing: -.01em; }
+.card__body p { color: var(--muted); font-size: 12.5px; margin: 6px 0 16px; flex: 1; }
+.card__foot { display: flex; align-items: center; justify-content: space-between; }
+.card__foot strong { font-size: 17px; font-weight: 800; }

@@ -1,0 +1,32 @@
+.hero { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; background: var(--brown); color: #fff; border-radius: 24px; padding: 40px; min-height: 420px; }
+.pill { display: inline-block; background: var(--yellow); color: var(--brown); font-weight: 800; font-size: 10.5px; letter-spacing: .05em; padding: 5px 11px; border-radius: 99px; }
+.hero h1 { font-size: clamp(38px, 5vw, 58px); line-height: 1.02; letter-spacing: -.03em; font-weight: 800; margin: 16px 0 14px; }
+.hero__text p { color: rgba(255,255,255,.8); max-width: 360px; font-size: 15px; }
+.hero__price { display: flex; align-items: baseline; gap: 12px; margin: 18px 0 20px; }
+.hero__price strong { color: var(--yellow); font-size: 34px; font-weight: 800; letter-spacing: -.02em; }
+.hero__price s { color: rgba(255,255,255,.55); font-size: 15px; }
+.hero__actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.hero__text small { display: block; margin-top: 18px; font-size: 11px; color: rgba(255,255,255,.6); }
+.hero__media { position: relative; align-self: stretch; min-height: 300px; }
+.hero__media > svg, .hero__media > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 16px; }
+.sticker { position: absolute; top: -14px; right: -10px; width: 108px; height: 108px; border-radius: 50%; background: var(--yellow); color: var(--brown); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; line-height: 1.05; font-size: 11px; font-weight: 800; letter-spacing: .06em; transform: rotate(10deg); box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+.sticker b { font-size: 22px; letter-spacing: 0; }
+.features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 26px 0; border-bottom: 1px solid var(--line); }
+.features li { display: flex; align-items: center; justify-content: center; gap: 12px; color: var(--red); }
+.features span { display: flex; flex-direction: column; color: var(--ink); line-height: 1.3; }
+.features b { font-size: 13px; font-weight: 600; }
+.features small { color: var(--muted); font-size: 12px; }
+.section { padding-top: 36px; }
+.section h2 { font-size: 34px; font-weight: 800; letter-spacing: -.025em; margin: 6px 0 6px; }
+.section .link-red { margin-bottom: 22px; }
+
+@media (max-width: 1000px) {
+  .hero { grid-template-columns: 1fr; padding: 32px; }
+  .hero__media { min-height: 260px; }
+}
+
+@media (max-width: 640px) {
+  .features { grid-template-columns: 1fr; justify-items: start; }
+  .features li { justify-content: flex-start; }
+  .hero h1 { font-size: 38px; }
+}
